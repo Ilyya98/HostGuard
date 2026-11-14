@@ -120,8 +120,8 @@ namespace HostGuard.Tests
         [TestCase('\u001B')]
         [TestCase('\u007F')]
         [TestCase('\u0085')]
-        [TestCase('‮')]
-        [TestCase('⁦')]
+        [TestCase('\u202E')]
+        [TestCase('\u2066')]
         [TestCase('\n')]
         public void ControlAndBidiCharactersAreRefused(char c)
         {

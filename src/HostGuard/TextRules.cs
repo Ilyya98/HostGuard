@@ -13,8 +13,8 @@ namespace HostGuard
             if (c == '\n') return !allowNewlines;
             if (c < 0x20 || c == 0x7F) return true;
             if (c >= 0x80 && c <= 0x9F) return true;
-            if (c >= '‪' && c <= '‮') return true;
-            if (c >= '⁦' && c <= '⁩') return true;
+            if (c >= '\u202A' && c <= '\u202E') return true;
+            if (c >= '\u2066' && c <= '\u2069') return true;
             return false;
         }
     }

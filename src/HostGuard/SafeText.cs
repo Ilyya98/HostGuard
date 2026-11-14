@@ -48,7 +48,7 @@ namespace HostGuard
         public static string EscapeRichText(string text)
         {
             if (string.IsNullOrEmpty(text) || text.IndexOf('<') < 0) return text ?? string.Empty;
-            return text.Replace("<", "<​");
+            return text.Replace("<", "<\u200B");
         }
 
         /// <summary>
